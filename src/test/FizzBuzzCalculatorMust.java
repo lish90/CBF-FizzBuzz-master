@@ -59,4 +59,15 @@ public class FizzBuzzCalculatorMust {
 
         Assert.assertEquals("Buzz",fizzBuzzCalculator.calculate(10));
     }
+    @Test
+    public void returnFizzBuzzWhenPassedByFiveAndThree() {
+        //        Arrange
+         FizzBuzzCalculator fizzBuzzCalculator = new FizzBuzzCalculator();
+
+       // Act - should test line of code
+       String result =  FizzBuzzCalculator.calculate(15);
+        //Assert(1) -
+        Assert.assertEquals("FizzBuzz",result);
+    }
+
 }
